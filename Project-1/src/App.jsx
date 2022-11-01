@@ -48,7 +48,8 @@ function App() {
 
           </div>
         </div>
-        <div id='display' className="display">{display}</div>
+        <div id='display' className="display"><div className="display-text">
+        {display}</div></div>
         </div>
         
         <div className="grid">

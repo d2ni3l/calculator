@@ -79,17 +79,18 @@ select {
 html {
   font-family: "League Spartan", sans-serif;
   background: #28243b;
-  overflow: hidden;
+  overflow-x: hidden !important;
 }
 
 .App {
   display: grid;
   place-content: center;
+  overflow-x: hidden !important;
 }
 
 .container {
-  padding:  0rem;
-  
+  padding: 0rem;
+
   display: grid;
   justify-content: center;
   margin: auto;
@@ -128,7 +129,7 @@ html {
   background-color: #332d6e;
   margin-top: 2rem;
   margin-inline: 2rem;
-  padding: 2rem 1.3rem;
+  padding: 1.5rem 1.3rem;
   border-radius: 10px;
 }
 
@@ -150,6 +151,13 @@ html {
   background-color: #8879ff;
 }
 
+.display-text {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-word;
+  text-overflow: ellipsis;
+}
+
 @media (max-width: 425px) {
   .grid {
     gap: 0.4rem;
@@ -159,13 +167,20 @@ html {
   }
   .container {
     position: relative;
-    left: 1.3rem;
+    left: 0rem;
+  }
+  .display-text{
+    max-width:350px;
   }
 }
 
 @media (max-width: 300px) {
   .container {
     position: relative;
-    left: 2.6rem;
+    left: 1.6rem;
   }
+}
+
+@media(min-width:560px){
+
 }
