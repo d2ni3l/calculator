@@ -1,6 +1,6 @@
 ## Project Name 
 
-#### Simple calculator app
+# Simple calculator app
 
 
 
